@@ -1,0 +1,46 @@
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #2a475e;
+  text-align: center;
+}
+
+.title-text{
+  color: #c7d5e0;
+}
+
+.tool-table{
+  background-color: #66c0f4;
+  border-radius: 15px;
+}
+
+th{
+  padding: 5px;
+}
+
+td{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.table-footer{
+  background-color: #66c0f4;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.tool-button{
+  color: #c7d5e0;
+  background-color: #2a475e;
+  border-radius: 5px;
+  border-width: 0;
+  padding: 5px;
+  margin: 10px;
+}
+
+.tool-button:hover{
+  color: #2a475e;
+  background-color: #c7d5e0;
+}

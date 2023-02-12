@@ -1,14 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Szerszám nyilvántartó</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>
-       Hello Word
-    </h1>
-    
-  </body>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tool Tracker</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?      family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1 class="title-text">Meroezkoz nyilvantarto</h1>
+  <div class="tool-table">
+    <table>
+      <tr>
+        <th>Status</th>
+        <th>Ezkoz Tipusa</th>
+        <th>Gyarto</th>
+        <th>Gyari szam</th>
+        <th>Tarosal helye</th>
+      </tr>
+      {% for tool in all_tools %}
+      <tr>
+        <td>{{ tool.status }}</td>
+        <td>{{ tool.tool_type }}</td>
+        <td>{{ tool.tool_brand }}</td>
+        <td>{{ tool.serial_number }}</td>
+        <td>{{ tool.location }}</td>
+        <td><button class="tool-button">More Info</button></td>
+        <td><button class="tool-button">Edit Tool</button></td>
+        <td><button class="tool-button">Remove Tool</button></td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+  <div class="table-footer">
+    <button class="tool-button">Add Tool</button>
+    <button class="tool-button">Edit Tool</button>
+    <button class="tool-button">Remove Tool</button>
+  </div>
+ <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+
+<footer>
+  <div>
+
+  </div>
+</footer>
+
+</body>
+
 </html>
