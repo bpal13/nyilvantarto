@@ -1,17 +1,26 @@
 body {
   height: 100%;
   width: 100%;
-  background-color: #2a475e;
+  background-color: #1b2838;
+  color: #c7d5e0;
   text-align: center;
 }
 
-.title-text{
-  color: #c7d5e0;
+.header-item{
+    color: #c7d5e0;
 }
 
 .tool-table{
-  background-color: #66c0f4;
+  background-color: #CFE2FF;
   border-radius: 15px;
+  /*margin: auto;*/
+  margin-left: 150px;
+  margin-right: 150px;
+  padding: 15px;
+}
+
+tr{
+    padding-top: 5px;
 }
 
 th{
@@ -23,24 +32,39 @@ td{
   padding-right: 5px;
 }
 
-.table-footer{
-  background-color: #66c0f4;
-  border-radius: 15px;
-  margin-top: 20px;
-  margin-left: 300px;
-  margin-right: 300px;
-}
-
 .tool-button{
+  background-color: #1b2838;
   color: #c7d5e0;
-  background-color: #2a475e;
   border-radius: 5px;
-  border-width: 0;
+  border: 2px solid;
   padding: 5px;
-  margin: 10px;
+
 }
 
 .tool-button:hover{
-  color: #2a475e;
+  color: black;
+  border-width: 1px;
   background-color: #c7d5e0;
+}
+
+
+.login-window{
+  margin: auto;
+  background-color: #66c0f4;
+  border-radius: 10px;
+  border-width: 0px;
+  width: 50%;
+  height: 50%;
+
+}
+
+.username{
+  border-radius: 20px;
+  border-width: 1px;
+
+}
+
+.password{
+  border-radius: 20px;
+  border-width: 1px;
 }

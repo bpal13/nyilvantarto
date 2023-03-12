@@ -1,0 +1,100 @@
+{% include "header.html" %}
+
+<body>
+<div>
+    <form action="{{ url_for('add_tool') }}" method="post" novalidate>
+        {{ form.csrf_token }}
+
+        <div>
+        {{ form.status.label }}
+            <br>
+        {{ form.status }}
+            </div>
+        <div>
+        {{ form.status_date.label }}
+            <br>
+        {{ form.status_date }}
+            </div>
+        <div>
+        {{ form.tool_id.label }}
+            <br>
+        {{ form.tool_id }}
+            </div>
+        <div>
+        {{ form.location.label }}
+            <br>
+        {{ form.location }}
+            </div>
+        <div>
+        {{ form.tool_type.label }}
+            <br>
+        {{ form.tool_type }}
+            </div>
+        <div>
+        {{ form.tool_brand.label }}
+            <br>
+        {{ form.tool_brand }}
+            </div>
+        <div>
+        {{ form.serial_number.label }}
+            <br>
+        {{ form.serial_number }}
+            </div>
+        <div>
+        {{ form.tool_accuracy.label }}
+            <br>
+        {{ form.tool_accuracy }}
+            </div>
+        <div>
+        {{ form.tool_range.label }}
+            <br>
+        {{ form.tool_range }}
+            </div>
+        <div>
+        {{ form.last_calibration.label }}
+            <br>
+        {{ form.last_calibration }}
+            </div>
+        <div>
+        {{ form.next_calibration.label }}
+            <br>
+        {{ form.next_calibration }}
+            </div>
+        <div>
+        {{ form.max_deviation.label }}
+            <br>
+        {{ form.max_deviation }}
+            </div>
+        <div>
+        {{ form.actual_deviation.label }}
+            <br>
+        {{ form.actual_deviation }}
+            </div>
+        <div>
+        {{ form.rating.label }}
+            <br>
+        {{ form.rating }}
+            </div>
+        <div>
+        {{ form.calibrated_by.label }}
+            <br>
+        {{ form.calibrated_by }}
+            </div>
+        <div>
+        {{ form.etalon_serial.label }}
+            <br>
+        {{ form.etalon_serial }}
+            </div>
+        <div>
+        {{ form.notes.label }}
+            <br>
+        {{ form.notes }}
+            </div>
+        <div>
+        {{ form.submit }}
+            </div>
+
+    </form>
+</div>
+</body>
+</html>

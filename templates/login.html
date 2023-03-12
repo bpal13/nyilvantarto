@@ -1,0 +1,28 @@
+{% include "header.html" %}
+
+<body>
+  <h1 class="title-text">Login Page</h1>
+  <div class="login-window">
+    <form action="/" method="post">
+      {{ form.username.label }}
+      <br>
+      {{ form.username }}
+      <br>
+      {{ form.password.label }}
+      <br>
+      {{ form.password }}
+      <br>
+      {{ form.submit }}
+    </form>
+    <p>Not Registered?<a href="{{ url_for('register_user') }}">sign up</a></p>
+  </div>
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+
+</body>
+
+</html>
